@@ -1,4 +1,28 @@
 body {
-    background-color: black;
+    background-color: #2F39A9;
     color: white;
+}
+
+h1{
+    font:200;
+}
+
+strong{
+    color: #15D8B3;
+}
+
+span{
+    color: #49A4BB;
+}
+
+p{
+
+}
+
+a{
+    background-color: #15D8B3;
+    font-weight: bold;
+    color: black;
+    border: 1px solid #15D8B3;
+    padding: 10px;
 }
