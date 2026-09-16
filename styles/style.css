@@ -43,7 +43,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 80px;
+    gap: 82px;
 }
 
 .apresentacao__conteudo{
@@ -100,7 +100,7 @@ body {
     font-weight: 600;
 }
 
-.apresentacao__conteudo__links__link:hover{
+.apresentacao__conteudo__links__navegacao:hover{
     background-color: var(--cor-hover);
 }
 
@@ -117,4 +117,19 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1300px){
+    .cabecalho{
+        padding: 10%;
+    }
+    
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
 }
