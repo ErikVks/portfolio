@@ -2,6 +2,8 @@
 
 Portfólio pessoal desenvolvido do zero com HTML e CSS puros, sem frameworks. O site apresenta quem eu sou, minha formação em Engenharia de Sistemas Ciber-Físicos na PUC-SP e os links para minhas redes profissionais.
 
+🔗 **Acesse o site:** [portfolio-two-beta-1mv44sess5.vercel.app](https://portfolio-two-beta-1mv44sess5.vercel.app)
+
 ## Sobre o projeto
 
 O objetivo deste projeto foi praticar a construção de páginas web estáticas com foco em organização de código, boas práticas de nomenclatura e responsividade. Todo o layout foi feito à mão, usando Flexbox para o posicionamento dos elementos e media queries para adaptar a página a telas menores.
@@ -14,7 +16,7 @@ O objetivo deste projeto foi praticar a construção de páginas web estáticas 
 
 ## Tecnologias utilizadas
 
-HTML5, CSS3 e Google Fonts (Krona One e Montserrat).
+HTML5, CSS3, Google Fonts (Krona One e Montserrat) e Vercel para a hospedagem.
 
 ## Destaques técnicos
 
@@ -40,10 +42,12 @@ portfolio/
 
 ## Como executar
 
-Não é necessário instalar nada. Basta clonar o repositório e abrir o arquivo `index.html` no navegador.
+O projeto está publicado na Vercel e pode ser acessado diretamente pelo [link do site](https://portfolio-two-beta-1mv44sess5.vercel.app).
+
+Para rodar localmente, não é necessário instalar nada. Basta clonar o repositório e abrir o arquivo `index.html` no navegador.
 
 ```bash
-git clone https://github.com/ErikVks/portfolio.git
+git clone https://github.com/ErikVks/NOME-DO-REPOSITORIO.git
 ```
 
 ## Contato
