@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="#projetos">Projetos</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
         </nav>
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="apresentacao__conteudo__titulo-destaque">com um Front-end de qualidade!</strong></h1>
-            <p class="apresentacao__conteudo__texto">Olá! Sou Erik Kohagura, desenvolvedora Front-end com especialidade em HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
-            <div class="apresentacao__conteudo__links">
+            <h1 class="apresentacao__conteudo__titulo" data-aos="fade-up">Eleve seu negócio digital a outro nível <strong class="apresentacao__conteudo__titulo-destaque">com um Front-end de qualidade!</strong></h1>
+            <p class="apresentacao__conteudo__texto" data-aos="fade-up" data-aos-delay="150">Olá! Sou Erik Kohagura, desenvolvedora Front-end com especialidade em HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+            <div class="apresentacao__conteudo__links" data-aos="fade-up" data-aos-delay="300">
                 <h2 class="apresentacao__conteudo__links__subtitulo">Acesse minhas redes:</h2>
                 <a class="apresentacao__conteudo__links__navegacao" href="https://linkedin.com/in/erik-vitor-kohagura-silva-907653325">
                     <img src="./assets/linkedin.png" alt="Imagem GitHub">
@@ -29,10 +31,80 @@
                 </a>
             </div>
         </section>
-        <img class="apresentacao__imagem" src="./assets/minha_foto.jpg" alt="Foto de Erik Kohagura">
+        <img class="apresentacao__imagem" src="./assets/minha_foto.jpg" alt="Foto de Erik Kohagura" data-aos="zoom-in" data-aos-duration="1000">
     </main>
+
+    <section class="projetos" id="projetos">
+        <h2 class="projetos__titulo" data-aos="fade-up">Projetos</h2>
+        <div class="projetos__lista">
+            <article class="projetos__card" data-aos="fade-up" data-aos-delay="0">
+                <h3 class="projetos__card__titulo">Amigo Secreto</h3>
+                <p class="projetos__card__texto">Aplicação que monta um sorteio de amigo secreto.</p>
+                <div class="projetos__card__tags">
+                    <span class="projetos__card__tag">JS</span>
+                    <span class="projetos__card__tag">HTML</span>
+                    <span class="projetos__card__tag">CSS</span>
+                </div>
+                <a class="projetos__card__link" href="https://github.com/ErikVks/amigo-secreto" target="_blank" rel="noopener">Ver no GitHub</a>
+            </article>
+            <article class="projetos__card" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="projetos__card__titulo">Ingresso</h3>
+                <p class="projetos__card__texto">Página de compra de ingressos para um show.</p>
+                <div class="projetos__card__tags">
+                    <span class="projetos__card__tag">JS</span>
+                    <span class="projetos__card__tag">HTML</span>
+                    <span class="projetos__card__tag">CSS</span>
+                </div>
+                <a class="projetos__card__link" href="https://github.com/ErikVks/ingresso" target="_blank" rel="noopener">Ver no GitHub</a>
+            </article>
+            <article class="projetos__card" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="projetos__card__titulo">Carrinho de Compras</h3>
+                <p class="projetos__card__texto">Carrinho de compras em que o usuário escolhe um produto da lista.</p>
+                <div class="projetos__card__tags">
+                    <span class="projetos__card__tag">JS</span>
+                    <span class="projetos__card__tag">HTML</span>
+                    <span class="projetos__card__tag">CSS</span>
+                </div>
+                <a class="projetos__card__link" href="https://github.com/ErikVks/carrinho-compras" target="_blank" rel="noopener">Ver no GitHub</a>
+            </article>
+            <article class="projetos__card" data-aos="fade-up" data-aos-delay="0">
+                <h3 class="projetos__card__titulo">Alugames</h3>
+                <p class="projetos__card__texto">Painel de aluguel de boardgames em que cada jogo pode ser alugado e devolvido com um clique.</p>
+                <div class="projetos__card__tags">
+                    <span class="projetos__card__tag">JS</span>
+                    <span class="projetos__card__tag">HTML</span>
+                    <span class="projetos__card__tag">CSS</span>
+                </div>
+                <a class="projetos__card__link" href="https://github.com/ErikVks/alugames" target="_blank" rel="noopener">Ver no GitHub</a>
+            </article>
+            <article class="projetos__card" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="projetos__card__titulo">Sorteador de Números</h3>
+                <p class="projetos__card__texto">Aplicação que sorteia uma quantidade escolhida de números dentro de um intervalo definido pelo usuário.</p>
+                <div class="projetos__card__tags">
+                    <span class="projetos__card__tag">JS</span>
+                    <span class="projetos__card__tag">HTML</span>
+                    <span class="projetos__card__tag">CSS</span>
+                </div>
+                <a class="projetos__card__link" href="https://github.com/ErikVks/sorteador-numeros" target="_blank" rel="noopener">Ver no GitHub</a>
+            </article>
+        </div>
+    </section>
+
     <footer class="rodape">
         <p>Desenvolvido por Erik Kohagura</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 80,
+            disable: function () {
+                return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            }
+        });
+    </script>
 </body>
 </html>

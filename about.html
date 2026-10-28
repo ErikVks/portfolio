@@ -5,23 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="index.html#projetos">Projetos</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
         </nav>
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
-            <p class="apresentacao__conteudo__texto">Sou Erik Vitor Kohagura Silva, estudante de Engenharia de Sistemas Ciber-Físicos na PUC-SP, e gosto de trabalhar no ponto em que o software encontra o mundo físico. Ao longo da graduação desenvolvi projetos que vão do firmware em C++ embarcado de um robô seguidor de linha até uma garra robótica com controle em cascata de força e posição, passando por controle de temperatura com anti-windup na minha Iniciação Científica, controle Fuzzy Takagi-Sugeno no Simulink e malhas PID em CLP industrial. Uso MATLAB e Simulink no dia a dia e sou co-fundador da Equipe de Robótica Malware, onde lidero um time de nove pessoas em projetos e competições. Este portfólio foi construído por mim em HTML e CSS, o que reflete outra parte de como trabalho: gosto de entender e montar as coisas do zero, seja um controlador, um circuito ou uma página web. Estou em busca de um estágio em controle, automação ou sistemas embarcados onde eu possa aplicar e ampliar esse conhecimento em problemas reais.</p>
+            <h1 class="apresentacao__conteudo__titulo" data-aos="fade-up">Sobre mim</h1>
+            <p class="apresentacao__conteudo__texto" data-aos="fade-up" data-aos-delay="150">Sou Erik Vitor Kohagura Silva, estudante de Engenharia de Sistemas Ciber-Físicos na PUC-SP, e gosto de trabalhar no ponto em que o software encontra o mundo físico. Ao longo da graduação desenvolvi projetos que vão do firmware em C++ embarcado de um robô seguidor de linha até uma garra robótica com controle em cascata de força e posição, passando por controle de temperatura com anti-windup na minha Iniciação Científica, controle Fuzzy Takagi-Sugeno no Simulink e malhas PID em CLP industrial. Uso MATLAB e Simulink no dia a dia e sou co-fundador da Equipe de Robótica Malware, onde lidero um time de nove pessoas em projetos e competições. Este portfólio foi construído por mim em HTML e CSS, o que reflete outra parte de como trabalho: gosto de entender e montar as coisas do zero, seja um controlador, um circuito ou uma página web. Estou em busca de um estágio em controle, automação ou sistemas embarcados onde eu possa aplicar e ampliar esse conhecimento em problemas reais.</p>
         </section>
-        <img class="apresentacao__imagem" src="./assets/minha_foto.jpg" alt="Foto de Erik Kohagura">
+        <img class="apresentacao__imagem" src="./assets/minha_foto.jpg" alt="Foto de Erik Kohagura" data-aos="zoom-in" data-aos-duration="1000">
     </main>
     <footer class="rodape">
         <p>Desenvolvido por Erik Kohagura</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 80,
+            disable: function () {
+                return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            }
+        });
+    </script>
 </body>
 </html>

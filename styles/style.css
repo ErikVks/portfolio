@@ -7,12 +7,16 @@
     --cor-hover: #3d46a3;
 
     --fonte-primaria: "Krona One", sans-serif;
-    --fonte-secundaria: "Montserrast",sans-serif;
+    --fonte-secundaria: "Montserrat",sans-serif;
 }
 
 *{
     margin:0;
     padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -109,6 +113,77 @@ body {
     border-radius: 16px;
 }
 
+.projetos{
+    padding: 4% 15% 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.projetos__titulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 2.25rem;
+    color: var(--cor-terciaria);
+}
+
+.projetos__lista{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.projetos__card{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 24px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.projetos__card:hover{
+    background-color: var(--cor-hover);
+}
+
+.projetos__card__titulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.projetos__card__texto{
+    font-size: 1rem;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.projetos__card__tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.projetos__card__tag{
+    padding: 4px 12px;
+    border-radius: 20px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.projetos__card__link{
+    color: var(--cor-terciaria);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.projetos__card__link:hover{
+    text-decoration: underline;
+}
+
 .rodape{
     padding: 24px;
     color: var(--cor-primaria);
@@ -139,5 +214,24 @@ body {
 
     .apresentacao__imagem{
         width: 60%;
+    }
+
+    .projetos{
+        padding: 5% 5% 10%;
+    }
+
+    .projetos__lista{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px){
+    .cabecalho__menu{
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .projetos__lista{
+        grid-template-columns: 1fr;
     }
 }
